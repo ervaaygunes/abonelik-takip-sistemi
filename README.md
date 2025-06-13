@@ -1,88 +1,63 @@
 # Abonelik Takip Uygulaması (Subscription Tracker)
 
-Bu proje, kullanıcıların dijital servisler için yaptıkları abonelikleri takip edebilecekleri, yönetebilecekleri ve organize edebilecekleri bir web uygulamasıdır. Modern web teknolojileri kullanılarak geliştirilmiş, güvenli ve kullanıcı dostu bir arayüze sahiptir.
+Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijital servis aboneliklerini takip edebilecekleri güvenli ve kullanıcı dostu bir web uygulaması.
 
-## 🎯 Temel Özellikler
+## 🎯 Özellikler
 
 ### 👤 Kullanıcı Yönetimi
 - Güvenli kayıt ve giriş sistemi
-- Şifre sıfırlama özelliği
+- Şifre sıfırlama
 - Profil yönetimi
-- Oturum güvenliği
 
 ### 📱 Abonelik Yönetimi
-- Yeni abonelik ekleme
-- Mevcut abonelikleri listeleme ve filtreleme
-- Abonelik bilgilerini düzenleme
-- Abonelik silme ve arşivleme
+- Abonelik ekleme, düzenleme, silme
+- Kategori bazlı filtreleme
 - Yenileme tarihi takibi
 - Otomatik yenileme durumu kontrolü
 
-### 🏷️ Kapsamlı Kategori Sistemi
-- Streaming Servisleri (Netflix, Disney+, Prime Video, vb.)
-- Müzik Platformları (Spotify, Apple Music, YouTube Music, vb.)
-- Oyun Abonelikleri (Xbox Game Pass, PlayStation Plus, vb.)
-- Yazılım Lisansları (Adobe Creative Cloud, Microsoft 365, vb.)
-- Hosting ve Domain Hizmetleri
-- Depolama Servisleri (Google Drive, Dropbox, vb.)
-- Diğer Dijital Servisler
+### 🏷️ Kategoriler
+- Streaming (Netflix, Disney+, Prime Video)
+- Müzik (Spotify, Apple Music)
+- Oyun (Xbox Game Pass, PlayStation Plus)
+- Yazılım (Adobe Creative Cloud, Microsoft 365)
+- Hosting ve Domain
+- Depolama (Google Drive, Dropbox)
 
-## 🛠️ Kullanılan Teknolojiler
+## 🛠️ Teknolojiler
 
 - **Backend**: PHP 7.4+
 - **Veritabanı**: MySQL/MariaDB
 - **Frontend**: HTML5, CSS3, JavaScript
+- **Framework**: Bootstrap 5
 - **Güvenlik**: PDO, Prepared Statements
-- **Responsive Tasarım**: Bootstrap 5
-- **Veritabanı Yönetimi**: phpMyAdmin
-
-## 📋 Sistem Gereksinimleri
-
-- PHP 7.4 veya üzeri
-- MySQL/MariaDB 5.7+
-- Web sunucusu (Apache/Nginx)
-- mod_rewrite etkin Apache sunucusu
-- PHP PDO eklentisi
-- GD kütüphanesi (resim işleme için)
-
-## 🔧 Kurulum Adımları
-
-1. XAMPP'ı bilgisayarınıza kurun
-2. MySQL ve Apache servislerini başlatın
-3. phpMyAdmin üzerinden veritabanını oluşturun
-4. Projeyi XAMPP'ın htdocs klasörüne kopyalayın
-5. `config/database.php` dosyasından veritabanı bağlantı ayarlarını yapın
-6. Tarayıcınızdan `http://localhost/PHP_MySQL_Projesi` adresine gidin
 
 ## 📸 Uygulama Görselleri
 
 ### Giriş Ekranı
 ![Giriş Yap](screenshots/girisyap.png)
-*Kullanıcı giriş ekranı - Güvenli ve kullanıcı dostu arayüz*
+*Güvenli ve kullanıcı dostu giriş arayüzü*
 
 ### Kayıt Ekranı
 ![Kayıt Ol](screenshots/kayitol.png)
-*Yeni kullanıcı kayıt formu - Detaylı bilgi girişi ve doğrulama*
+*Detaylı bilgi girişi ve doğrulama*
 
 ### Abonelik Oluşturma
 ![Abonelik Oluştur](screenshots/abonelikolustur.png)
-*Yeni abonelik ekleme formu - Kapsamlı kategori ve detay seçenekleri*
+*Kapsamlı kategori ve detay seçenekleri*
 
 ### Abonelik Takip
 ![Abonelik Takip](screenshots/aboneliktakip.png)
-*Abonelik listeleme ve yönetim ekranı - Filtreleme ve arama özellikleri*
+*Filtreleme ve arama özellikleri*
 
-## 🔐 Güvenlik Özellikleri
+## 🔐 Güvenlik
 
-- PDO prepared statements ile SQL injection koruması
-- XSS (Cross-Site Scripting) koruması
-- CSRF (Cross-Site Request Forgery) koruması
-- Güvenli şifre hashleme (password_hash)
-- Input validasyonu ve sanitizasyonu
-- Güvenli oturum yönetimi
+- SQL injection koruması (PDO)
+- XSS ve CSRF koruması
+- Güvenli şifre hashleme
+- Input validasyonu
 - SSL/TLS desteği
 
-## 📊 Veritabanı Yapısı
+## 📊 Veritabanı
 
 ### Users Tablosu
 ```sql
@@ -111,94 +86,20 @@ CREATE TABLE subscriptions (
 );
 ```
 
-## 🐛 Hata Ayıklama ve Loglama
-
-- Detaylı hata mesajları
-- Hata log dosyaları
-- Kullanıcı aktivite logları
-- Veritabanı işlem logları
-- Geliştirici modu
-
 ## 📝 Kod Standartları
 
-- PSR-4 autoloading standardı
+- PSR-4 autoloading
 - PSR-12 kodlama standardı
 - Temiz kod prensipleri
 - Kapsamlı dokümantasyon
-- Yorum satırları ve açıklamalar
 
 ## 🤝 Katkıda Bulunma
 
-1. Bu depoyu fork edin
-2. Yeni bir branch oluşturun (`git checkout -b feature/amazing-feature`)
+1. Fork yapın
+2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
 3. Değişikliklerinizi commit edin (`git commit -m 'feat: Add amazing feature'`)
 4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
 5. Pull Request oluşturun
-
-## 📄 Lisans
-
-Bu proje MIT lisansı altında lisanslanmıştır. Detaylar için `LICENSE` dosyasına bakın.
-
-## 👥 İletişim
-
-Proje Sahibi - [@github_username](https://github.com/github_username)
-
-Proje Linki: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-## Kurulum
-
-1. Projeyi web sunucunuza yükleyin
-2. `config/database.php` dosyasındaki veritabanı bağlantı bilgilerinin doğru olduğundan emin olun
-3. Veritabanı bağlantısı için `localhost` kullanılmalıdır
-
-## Önemli Notlar
-
-- Veritabanı bağlantısı için host adresi olarak `localhost` kullanılmalıdır
-- Hata ayıklama modu aktif durumdadır
-- PDO kullanılarak güvenli veritabanı bağlantısı sağlanmıştır
-
-## Hata Ayıklama
-
-Eğer veritabanı bağlantı hatası alırsanız:
-1. Veritabanı sunucusunun çalıştığından emin olun
-2. Bağlantı bilgilerinin doğru olduğunu kontrol edin
-3. Host adresinin `localhost` olduğundan emin olun
-
-## Güvenlik
-
-- Veritabanı şifreleri ve hassas bilgiler güvenli bir şekilde saklanmalıdır
-- PDO prepared statements kullanılarak SQL injection saldırılarına karşı koruma sağlanmıştır
-
-## 🎯 Özellikler
-
-- 👤 Kullanıcı Yönetimi
-  - Kayıt olma
-  - Giriş yapma
-  - Oturum kapatma
-
-- 📱 Abonelik Yönetimi
-  - Yeni abonelik ekleme
-  - Mevcut abonelikleri listeleme
-  - Abonelik bilgilerini düzenleme
-  - Abonelik silme
-
-- 🏷️ Abonelik Kategorileri
-  - Streaming (Netflix, Disney+, vb.)
-  - Müzik (Spotify, Apple Music, vb.)
-  - Oyun (Xbox Game Pass, PlayStation Plus, vb.)
-  - Yazılım (Adobe Creative Cloud, Microsoft 365, vb.)
-  - Hosting
-  - Domain
-  - Video
-  - Film
-  - Depolama
-  - Diğer
-
-- 💰 Abonelik Detayları
-  - Aylık/yıllık ücret
-  - Yenileme günü
-  - Otomatik yenileme durumu
-  - Notlar
 
 ## 📋 Kurulum
 
