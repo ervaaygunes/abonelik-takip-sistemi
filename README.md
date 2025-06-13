@@ -2,21 +2,21 @@
 
 Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijital servis aboneliklerini takip edebilecekleri güvenli ve kullanıcı dostu bir web uygulaması.
 
-## 🎯 Özellikler
+## Özellikler
 
-### 👤 Kullanıcı Yönetimi
+### Kullanıcı Yönetimi
 - Güvenli kayıt ve giriş sistemi
 - Şifre hashleme ile güvenli depolama
 - Oturum yönetimi (PHP Sessions)
 - Profil yönetimi
 
-### 📱 Abonelik Yönetimi
+### Abonelik Yönetimi
 - Abonelik ekleme, düzenleme, silme
 - Kategori bazlı filtreleme
 - Yenileme tarihi takibi
 - Otomatik yenileme durumu kontrolü
 
-### 🏷️ Kategoriler
+### Kategoriler
 - Streaming (Netflix, Disney+, Prime Video)
 - Müzik (Spotify, Apple Music)
 - Oyun (Xbox Game Pass, PlayStation Plus)
@@ -24,7 +24,7 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 - Hosting ve Domain
 - Depolama (Google Drive, Dropbox)
 
-## 🛠️ Teknolojiler
+## Teknolojiler
 
 - **Backend**: Saf PHP (Framework kullanılmadan)
 - **Veritabanı**: MySQL
@@ -35,7 +35,7 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
   - Password Hashing
   - Session Management
 
-## 📸 Uygulama Görselleri
+## Uygulama Görselleri
 
 ### Giriş Ekranı
 ![Giriş Yap](screenshots/girisyap.png)
@@ -53,7 +53,7 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 ![Abonelik Takip](screenshots/aboneliktakip.png)
 *Filtreleme ve arama özellikleri*
 
-## 🔐 Güvenlik Özellikleri
+## Güvenlik Özellikleri
 
 - SQL injection koruması (PDO Prepared Statements)
 - XSS ve CSRF koruması
@@ -61,7 +61,7 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 - Session tabanlı oturum yönetimi
 - Input validasyonu
 
-## 📊 Veritabanı Yapısı
+## Veritabanı Yapısı
 
 ### Users Tablosu
 ```sql
@@ -90,18 +90,18 @@ CREATE TABLE subscriptions (
 );
 ```
 
-## 📝 Kod Standartları
+## Kod Standartları
 
 - PSR-4 autoloading
 - PSR-12 kodlama standardı
 - Temiz kod prensipleri
 - Kapsamlı dokümantasyon
 
-## 🎥 Demo Video
+## Demo Video
 
 [Demo video bağlantısı buraya eklenecek]
 
-## 🤝 Katkıda Bulunma
+## Katkıda Bulunma
 
 1. Fork yapın
 2. Feature branch oluşturun (`git checkout -b feature/amazing-feature`)
@@ -109,13 +109,13 @@ CREATE TABLE subscriptions (
 4. Branch'inizi push edin (`git push origin feature/amazing-feature`)
 5. Pull Request oluşturun
 
-## 📋 Kurulum
+## Kurulum
 
 1. XAMPP'ı bilgisayarınıza kurun
 2. MySQL ve Apache servislerini başlatın
-3. phpMyAdmin üzerinden `subscription_tracker` adında yeni bir veritabanı oluşturun
+3. phpMyAdmin üzerinden veritabanını oluşturun
 4. Projeyi XAMPP'ın htdocs klasörüne kopyalayın
 5. Tarayıcınızdan `http://localhost/PHP_MySQL_Projesi` adresine gidin
 
-## 👨‍💻 Geliştirici
+
 
