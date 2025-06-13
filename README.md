@@ -6,7 +6,8 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 
 ### 👤 Kullanıcı Yönetimi
 - Güvenli kayıt ve giriş sistemi
-- Şifre sıfırlama
+- Şifre hashleme ile güvenli depolama
+- Oturum yönetimi (PHP Sessions)
 - Profil yönetimi
 
 ### 📱 Abonelik Yönetimi
@@ -25,11 +26,14 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 
 ## 🛠️ Teknolojiler
 
-- **Backend**: PHP 7.4+
-- **Veritabanı**: MySQL/MariaDB
+- **Backend**: Saf PHP (Framework kullanılmadan)
+- **Veritabanı**: MySQL
 - **Frontend**: HTML5, CSS3, JavaScript
-- **Framework**: Bootstrap 5
-- **Güvenlik**: PDO, Prepared Statements
+- **CSS Framework**: Bootstrap 5
+- **Güvenlik**: 
+  - PDO Prepared Statements
+  - Password Hashing
+  - Session Management
 
 ## 📸 Uygulama Görselleri
 
@@ -49,15 +53,15 @@ Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijita
 ![Abonelik Takip](screenshots/aboneliktakip.png)
 *Filtreleme ve arama özellikleri*
 
-## 🔐 Güvenlik
+## 🔐 Güvenlik Özellikleri
 
-- SQL injection koruması (PDO)
+- SQL injection koruması (PDO Prepared Statements)
 - XSS ve CSRF koruması
-- Güvenli şifre hashleme
+- Güvenli şifre hashleme (password_hash)
+- Session tabanlı oturum yönetimi
 - Input validasyonu
-- SSL/TLS desteği
 
-## 📊 Veritabanı
+## 📊 Veritabanı Yapısı
 
 ### Users Tablosu
 ```sql
@@ -93,6 +97,10 @@ CREATE TABLE subscriptions (
 - Temiz kod prensipleri
 - Kapsamlı dokümantasyon
 
+## 🎥 Demo Video
+
+[Demo video bağlantısı buraya eklenecek]
+
 ## 🤝 Katkıda Bulunma
 
 1. Fork yapın
@@ -108,46 +116,6 @@ CREATE TABLE subscriptions (
 3. phpMyAdmin üzerinden `subscription_tracker` adında yeni bir veritabanı oluşturun
 4. Projeyi XAMPP'ın htdocs klasörüne kopyalayın
 5. Tarayıcınızdan `http://localhost/PHP_MySQL_Projesi` adresine gidin
-
-## 🔧 Veritabanı Yapısı
-
-### Users Tablosu
-```sql
-CREATE TABLE users (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    name VARCHAR(100) NOT NULL,
-    email VARCHAR(100) UNIQUE NOT NULL,
-    password VARCHAR(255) NOT NULL,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
-);
-```
-
-### Subscriptions Tablosu
-```sql
-CREATE TABLE subscriptions (
-    id INT AUTO_INCREMENT PRIMARY KEY,
-    user_id INT NOT NULL,
-    service_name VARCHAR(100) NOT NULL,
-    category VARCHAR(50),
-    price DECIMAL(8,2),
-    renewal_day INT,
-    auto_renew BOOLEAN DEFAULT 1,
-    notes TEXT,
-    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-    FOREIGN KEY (user_id) REFERENCES users(id) ON DELETE CASCADE
-);
-```
-
-## 📸 Ekran Görüntüleri
-
-![Giriş Yap](screenshots/girisyap.png)
-![Kayıt Ol](screenshots/kayitol.png)
-![Abonelik Oluştur](screenshots/abonelikolustur.png)
-![Abonelik Takip](screenshots/aboneliktakip.png)
-
-## 🎥 Demo Video
-
-[Demo video bağlantısı buraya eklenecek]
 
 ## 👨‍💻 Geliştirici
 
