@@ -81,6 +81,9 @@ include 'templates/header.php';
                             <option value="Yazılım" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Yazılım') ? 'selected' : ''; ?>>Yazılım</option>
                             <option value="Hosting" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Hosting') ? 'selected' : ''; ?>>Hosting</option>
                             <option value="Domain" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Domain') ? 'selected' : ''; ?>>Domain</option>
+                            <option value="Video" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Video') ? 'selected' : ''; ?>>Video</option>
+                            <option value="Film" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Film') ? 'selected' : ''; ?>>Film</option>
+                            <option value="Depolama" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Depolama') ? 'selected' : ''; ?>>Depolama</option>
                             <option value="Diğer" <?php echo (isset($_POST['category']) && $_POST['category'] === 'Diğer') ? 'selected' : ''; ?>>Diğer</option>
                         </select>
                     </div>

@@ -99,6 +99,9 @@ include 'templates/header.php';
                             <option value="Yazılım" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Yazılım') ? 'selected' : ''; ?>>Yazılım</option>
                             <option value="Hosting" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Hosting') ? 'selected' : ''; ?>>Hosting</option>
                             <option value="Domain" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Domain') ? 'selected' : ''; ?>>Domain</option>
+                            <option value="Video" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Video') ? 'selected' : ''; ?>>Video</option>
+                            <option value="Film" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Film') ? 'selected' : ''; ?>>Film</option>
+                            <option value="Depolama" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Depolama') ? 'selected' : ''; ?>>Depolama</option>
                             <option value="Diğer" <?php echo (($_POST['category'] ?? $subscription['category']) === 'Diğer') ? 'selected' : ''; ?>>Diğer</option>
                         </select>
                     </div>

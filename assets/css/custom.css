@@ -1,0 +1,99 @@
+body {
+    background: #f8f9fa;
+}
+
+.card {
+    border: none;
+    border-radius: 1rem;
+    box-shadow: 0 4px 24px 0 rgba(0, 0, 0, 0.08);
+    transition: box-shadow 0.2s;
+    background: #fff;
+}
+.card:hover {
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.16);
+}
+
+.btn-primary, .btn-outline-primary {
+    border-radius: 2rem;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    background: #007bff;
+    border: none;
+}
+.btn-primary:hover, .btn-outline-primary:hover {
+    background: #0056b3;
+}
+
+.alert {
+    border-radius: 1rem;
+    font-size: 1rem;
+    background: #e9ecef;
+    color: #212529;
+    border: none;
+}
+
+.badge-category {
+    font-size: 0.95em;
+    border-radius: 0.5rem;
+    padding: 0.4em 0.8em;
+    margin-bottom: 0.5em;
+}
+
+.badge-Streaming { background: #007bff; color: #fff; }
+.badge-Müzik { background: #28a745; color: #fff; }
+.badge-Oyun { background: #ffc107; color: #212529; }
+.badge-Yazılım { background: #17a2b8; color: #fff; }
+.badge-Hosting { background: #dc3545; color: #fff; }
+.badge-Domain { background: #6c757d; color: #fff; }
+.badge-Video { background: #e9ecef; color: #212529; }
+.badge-Film { background: #007bff; color: #fff; }
+.badge-Depolama { background: #28a745; color: #fff; }
+.badge-Diğer { background: #f8f9fa; color: #212529; }
+
+.form-control, .form-select {
+    border-radius: 0.7rem;
+    border: 1.5px solid #ced4da;
+    box-shadow: none;
+    transition: border-color 0.2s;
+    background: #fff;
+}
+.form-control:focus, .form-select:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.1rem rgba(0, 123, 255, 0.25);
+}
+
+.navbar {
+    border-radius: 0 0 1rem 1rem;
+    box-shadow: 0 2px 12px 0 rgba(0, 0, 0, 0.08);
+    background: #fff !important;
+}
+
+.navbar .nav-link {
+    color: #212529 !important;
+    font-weight: 500;
+    transition: color 0.2s;
+}
+.navbar .nav-link:hover, .navbar .nav-link.active {
+    color: #007bff !important;
+}
+
+.btn-outline-primary {
+    color: #007bff !important;
+    background-color: #fff !important;
+    border: 1.5px solid #007bff !important;
+    font-weight: 600;
+}
+.btn-outline-primary:hover, .btn-outline-primary:focus {
+    color: #fff !important;
+    background-color: #007bff !important;
+    border-color: #007bff !important;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+    background: #f8f9fa;
+}
+::-webkit-scrollbar-thumb {
+    background: #6c757d;
+    border-radius: 4px;
+} 

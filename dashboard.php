@@ -58,9 +58,13 @@ include 'templates/header.php';
             <div class="col-md-4 mb-4">
                 <div class="card h-100">
                     <div class="card-body">
-                        <h5 class="card-title"><?php echo htmlspecialchars($subscription['service_name']); ?></h5>
+                        <h5 class="card-title">
+                            <i class="bi bi-box-seam me-1"></i> <?php echo htmlspecialchars($subscription['service_name']); ?>
+                        </h5>
+                        <span class="badge badge-category badge-<?php echo htmlspecialchars($subscription['category']); ?>">
+                            <?php echo htmlspecialchars($subscription['category']); ?>
+                        </span>
                         <p class="card-text">
-                            <strong>Kategori:</strong> <?php echo htmlspecialchars($subscription['category']); ?><br>
                             <strong>Fiyat:</strong> <?php echo number_format($subscription['price'], 2); ?> ₺<br>
                             <strong>Yenileme Günü:</strong> <?php echo $subscription['renewal_day']; ?><br>
                             <strong>Otomatik Yenileme:</strong> <?php echo $subscription['auto_renew'] ? 'Evet' : 'Hayır'; ?>

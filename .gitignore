@@ -1,0 +1,83 @@
+# IDE ve Editör Dosyaları
+.idea/
+.vscode/
+*.sublime-project
+*.sublime-workspace
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Composer
+/vendor/
+composer.phar
+composer.lock
+
+# Node.js
+/node_modules/
+package-lock.json
+yarn.lock
+
+# Log Dosyaları
+/logs/*
+*.log
+error_log
+access_log
+
+# Cache Dosyaları
+/cache/*
+*.cache
+
+# Geçici Dosyalar
+*.tmp
+*.temp
+*.bak
+*.backup
+
+# Çevre Değişkenleri
+.env
+.env.*
+!.env.example
+
+# Yapılandırma Dosyaları
+config/database.php
+config/config.php
+
+# Upload Klasörü
+/uploads/*
+!uploads/.gitkeep
+
+# Derleme Çıktıları
+/dist/
+/build/
+
+# Test Dosyaları
+/tests/coverage/
+.phpunit.result.cache
+
+# Diğer
+*.zip
+*.tar.gz
+*.rar
+*.7z
+*.sql
+*.sqlite
+*.db
+
+# Güvenlik
+*.pem
+*.key
+*.crt
+*.csr
+*.srl
+*.p12
+*.pfx
+
+# Sistem Dosyaları
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db 
