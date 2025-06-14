@@ -101,7 +101,7 @@ CREATE TABLE subscriptions (
 
 ## Demo Video
 
-[Demo Video](https://youtu.be/OwFSO9SX6fk)
+https://youtu.be/OwFSO9SX6fk
 
 ## Katkıda Bulunma
 
