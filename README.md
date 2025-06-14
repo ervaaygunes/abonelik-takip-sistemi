@@ -2,6 +2,8 @@
 
 Modern web teknolojileri kullanılarak geliştirilmiş, kullanıcıların dijital servis aboneliklerini takip edebilecekleri güvenli ve kullanıcı dostu bir web uygulaması.
 
+**Canlı Demo:** [http://95.130.171.20/~st22360859027/register.php](http://95.130.171.20/~st22360859027/register.php)
+
 ## Özellikler
 
 ### Kullanıcı Yönetimi
@@ -99,7 +101,7 @@ CREATE TABLE subscriptions (
 
 ## Demo Video
 
-[Demo video bağlantısı buraya eklenecek]
+[Demo Video](https://youtu.be/OwFSO9SX6fk)
 
 ## Katkıda Bulunma
 
